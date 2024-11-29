@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
+		color: #312343;
 		font-weight: 300;
 		font-size: 13pt;
 	}
@@ -1508,7 +1508,7 @@ input, select, textarea {
 /* Form */
 
 	form label {
-		color: #3e3e3e;
+		color: #312343;
 		font-weight: 700;
 		display: block;
 		margin: 0 0 0.5em 0;
@@ -1531,7 +1531,7 @@ input, select, textarea {
 		border-radius: 8px;
 		border: solid 1px #ddd;
 		background: #fff;
-		color: #bbb;
+		color: #312343bb;
 		box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
 		width: 100%;
 	}
@@ -1604,7 +1604,7 @@ input, select, textarea {
 
 			table.default thead {
 				background: #4f4f4f;
-				color: #fff;
+				color: #312343;
 			}
 
 /* Section/Article */
@@ -1698,7 +1698,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			background-color: #43bff0;
-			color: #fff !important;
+			color: #312343 !important;
 		}
 
 		input[type="button"]:active,
@@ -1733,8 +1733,8 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background-color: #4f4f4f;
-				color: #fff !important;
+				background-color: #B4BFE0;
+				color: #312343 !important;
 			}
 
 			input[type="button"].alt:active,
@@ -1742,7 +1742,7 @@ input, select, textarea {
 			input[type="reset"].alt:active,
 			button.alt:active,
 			.button.alt:active {
-				background-color: #3f3f3f;
+				background-color: #B4BFE0;
 			}
 
 /* List */
@@ -2009,7 +2009,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style4 {
-			background-color: #303030;
+			background-color: #D8D4ED;
 			color: #999;
 			text-shadow: -1px -1px 0px #181818;
 		}
@@ -2036,7 +2036,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #282828;
+		background-color: #D8D4ED;
 		text-align: center;
 		position: fixed;
 		left: 0;
@@ -2071,7 +2071,7 @@ input, select, textarea {
 			outline: 0;
 			font-weight: 600;
 			border-radius: 8px;
-			color: #fff;
+			color: #312343;
 			height: 2.5em;
 			line-height: 2.5em;
 			padding: 0 1.25em;
