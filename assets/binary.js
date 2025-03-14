@@ -28,7 +28,7 @@ async function main() {
                   return;
               }
               let floatId: vec3f = vec3f(id); // id is vec3u
-              let scale: f32 = 0.5;          // Example scale factor
+              let scale: f32 = 0.5;          
               let scaledId: vec3f = floatId * scale; // Perform the operation in float space
     
               let color = textureLoad(ourTexture, vec2u(id.xy), 0);
@@ -144,7 +144,6 @@ async function main() {
     var star = stars[vertexIndex / 6];
 
     let size = 0.02;
-    // var baseX = size * pos[vertexIndex % 6].x - 0.8; // Base x position
     let x = size * pos[vertexIndex % 6].x - 0.8; // Increment x with time
 
     let y = size * pos[vertexIndex % 6].y + 0.00001 * timeData.npix - 0.9; 
@@ -281,7 +280,7 @@ const timeBuffer = device.createBuffer({
   
   
     const bindGroup = device.createBindGroup({
-      layout: bindGroupLayout, // Use the explicit layout
+      layout: bindGroupLayout, 
       entries: [
           { binding: 0, resource: { buffer: staticStorageBuffer }},
           { binding: 1, resource: { buffer: timeBuffer }}  ],
@@ -363,7 +362,7 @@ async function processPixelCount() {
 
     const encoder = device.createCommandEncoder();
 
-    // Step 1: Render Pass (to custom texture for compute)
+    // Step 1: make texture
     renderPassDescriptor.colorAttachments[0].view = texture.createView(); // Render to custom texture
     const computeRenderPass = encoder.beginRenderPass(renderPassDescriptor);
     computeRenderPass.setPipeline(pipeline1);
@@ -385,22 +384,22 @@ async function processPixelCount() {
 
     // computeRenderPass.end();
 
-    // Submit first render pass (for compute texture)
+
     device.queue.submit([encoder.finish()]);
 
-    // Step 2: Render Pass (directly to canvas for display)
-    renderPassDescriptor.colorAttachments[0].view = context.getCurrentTexture().createView(); // Render to canvas
+    // Step 2: Render to display
+    renderPassDescriptor.colorAttachments[0].view = context.getCurrentTexture().createView(); 
     const displayEncoder = device.createCommandEncoder();
     const displayRenderPass = displayEncoder.beginRenderPass(renderPassDescriptor);
     displayRenderPass.setPipeline(pipeline1);
     displayRenderPass.setBindGroup(0, bindGroup);
-    displayRenderPass.draw(6 * 100); // Adjust for your specific geometry
+    displayRenderPass.draw(6 * 100); 
     displayRenderPass.setPipeline(pipeline2);
     displayRenderPass.setBindGroup(0, bindGroup);
-    displayRenderPass.draw(6 * 100); // Adjust for your specific geometry
+    displayRenderPass.draw(6 * 100); 
     displayRenderPass.end();
 
-    // Submit second render pass (for canvas display)
+
     device.queue.submit([displayEncoder.finish()]);
 
     // Step 3: Compute Pass

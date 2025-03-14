@@ -4,9 +4,25 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+
+
 <html>
 	<head>
-		<title>Jenny Su</title>
+		<style>
+			.less-space {
+			  margin-bottom: 5px;
+			}
+		  </style>
+		
+		<style>
+			.no-gap {
+			  margin-bottom: 0;
+			}
+		  </style>
+
+
+		<title> Jenny Su</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,45 +36,110 @@
 					<li><a href="#research">Research</a></li>
 					<li><a href="#publications">Publications</a></li>
 					<li><a href="#personal">Personal</a></li>
-					
 				</ul>
 			</nav>
 
 		<!-- Home -->
-			<article id="top" class="wrapper style1">
+			<article id="top" class="wrapper style2">
 				<div class="container">
 					<div class="row">
-
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="images/profile2.jpg" alt="" /></span>
+						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
 								<strong><h1>Jenny Su<h1></strong>
 							</header>
-							<p>Hi! I am a second-year PhD student in the Department of Astronomy and Astrophysics at the University of Toronto.</br>
-								I am supervised by Professor Maria Drout. </br>
-								
+							<p>Hi! I am a second-year PhD student in the Department of Astronomy and Astrophysics at the University of Toronto.
+								Supervised by Professor Maria Drout, I study the binary progenitors of stripped envelope supernovae. <br>
+								Previously, I received my B.Sc in Physics from McGill University. 
 							</p>
 			
-							<p>My CV is linked  <a href="assets/Su_CV.pdf">here</a>. </br>
-								WebGPU project is linked <a href="assets/webgpu.html">here</a>. </br>
+							<p> <a style="color: #A49AD5;" href="assets/Su_CV.pdf" target="_blank" class="icon solid fa-file-pdf"><span> CV</span></a> </br>
 							Email: jennyjn.su@mail.utoronto.ca
 							</p>
 						</div>
 
-						
 					</div>
 				</div>
 			</article>
 
 		<!-- Research -->
-			<article id="research" class="wrapper style2">
+			<article id="research" class="wrapper style1">
 				<div class="container">
 					<header>
-						<h2>Research</h2>
+						<h2> Research</h2>
 						
 					</header>
-					<div class="row aln-center">
+					<div class="row">
+						<div class="col-12 col-12-medium col-12-small">
+							<h3 class="less-space"> Stripped Envelope Supernovae (SESNe)</h3>	
+							<p class="no-gap"> Maria Drout, Ori Fox, Emmanouil (Manos) Zapartas + Others </p>
+						</div>
+						<div class="col-4 col-5-medium col-12-small">
+							<span class="image research-image"><img src="images/SN93J_artist.jpg" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-medium col-12-small"> 
 
- 
+
+							<p style="text-align: left;">
+							SESNe originate from stars that have lost their hydrogen envelope. 
+							The progenitor could be a single massive star shedding its envelope through stellar winds or a star that lost its envelope during binary interactions. 
+							It has been theorized that most SESNe are in binary systems, but direct observational constraints remain limited.
+							I am analyzing SN2017gax, one of the only SESNe of which both <strong>pre</strong>- and <strong>post</strong>-explosion images are available. 
+							With deep non-detection images from HST, I place constraints on luminosity of the progenitor and any surviving companion as a function of temperature. 
+							Using POSYDON binary population synthesis models, we analyze possible evolutionary histories of the SN2017gax system with our current constraints. 
+							<br> <br> <br>
+							</p>
+						</div>	
+					</div>
+
+
+					<div class="row">
+						<div class="col-12 col-12-medium col-12-small">
+						<h3 class="less-space"> Time Series Analysis with RR Lyraes</h3>
+						<p class="no-gap"> Gwen Eadie, Aarya Patil, Aaron Springford</p>
+						</div>
+						<div class="col-4 col-5-medium col-12-small">
+							<span class="image research-image"><img src="images/tapify_logo.png" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-medium col-12-small"> 	
+							<p style="text-align: left;">
+								The Lomb-Scargle periodogram is often used to estimate the power spectrum of time series data, including periods of variable star pulsations.
+								However, it suffers from the statistical problems of inconsistency and bias. 
+								We used <a href="https://github.com/aaryapatil/tapify" target="_blank">tapify</a>, a package that utilizes the multitaper Non-Uniform Fast Fourier Transform (mtNUFFT) and its extension the multitaper F-test, to address these problems. 
+								We applied the code on a sample of RR Lyrae stars and found the F-test outperforms other traditoinal periodograms. <br> 
+								<i class="fas fa-file-pdf"></i> Read my poster from the TASC8/KASC15 conference <a href="https://ui.adsabs.harvard.edu/abs/2024tkas.confE..44S/abstract" target="_blank">here</a>. <br>
+								<br> <br> 
+							</p>
+						</div>	
+	
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-12-medium col-12-small">
+							<h3 class="less-space"> Canadian Hydrogen Intensity Mapping Experiment / Fast Radio Burst (CHIME/FRB) </h3>
+							<p class="no-gap"> Supervisors: Vicky Kaspi, Ryan Mckinven</p>
+					</div>
+
+						<div class="col-4 col-5-medium col-12-small">
+							<span class="image research-image"><img src="images/chime.jpg" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-medium col-12-small"> 
+							<p style="text-align: left;"> FRBs are luminous microsecond to millisecond bursts, commonly from extragalactic origins. 
+								Polarization properties of FRBs reveal information about the emission mechanisms and their local environments.
+								For my undergraduate thesis, I improved the CHIME/FRB polarization pipeline to determine accurate rotation measure values. 
+								With the pipeline, I analyzed the polarization of morphologically complex FRBs. I also compared polarization properties of repeating and non-repeating FRBs. <br>
+								<i class="fas fa-file-pdf"></i> Papers with J.Su as co-author:
+								<a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...968...50P/abstract" target="_blank">Pandhi et al. 2024</a>,
+								<a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...974..274F/abstract" target="_blank">Faber et al. 2024</a>,
+								<a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...947...83C/abstract" target="_blank">CHIME Collaboration 2023 </a>,
+								<a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...950...12M/abstract" target="_blank">Mckinven et al. 2023a</a>
+								<a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...951...82M/abstract" target="_blank">Mckinven et al. 2023b</a> 
+
+							</p>
+						</div>	
+					</div>
 			</article>
 
 			
@@ -68,7 +149,7 @@
 						Publications
 					</h2>
 
-					<p><a href=https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0003-0607-8194&sort=date+desc>NASA ADS</a> </p>
+					<p><a href=https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0003-0607-8194&sort=date+desc target="_blank">NASA ADS</a> </p>
 				</div>
 			</article>
 
@@ -92,10 +173,14 @@
 					
 				</header>
 				<div class="row">
-					<div class="col-4 col-5-medium col-5-small">
+					<div class="col-4 col-5-medium col-12-small">
 						
 						<span class="image research-image"><img src="images/pico.jpg" alt="" /></span>
 					</div>
+					<div class="col-8 col-7-medium col-12-small"> 
+						<p style="text-align: left;"> 
+						When I'm not thinking about astronomy, you can find me playing with my adorable dog Pico. I also love to read science fiction and fantasy books!
+						</p>
 
 				
 
