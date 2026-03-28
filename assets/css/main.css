@@ -2004,8 +2004,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #f4f4f4;
-			text-shadow: 1px 1px 0px #fff;
+			background-color: #EA8A95;
+			
 		}
 
 		.wrapper.style4 {
@@ -2394,6 +2394,7 @@ input, select, textarea {
 
 				#nav a {
 					padding: 0 0.75em;
+					font-size: 0.95em;
 					height: inherit;
 					line-height: inherit;
 					border-radius: 0;
